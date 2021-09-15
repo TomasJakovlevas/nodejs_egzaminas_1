@@ -1,9 +1,10 @@
 import express from 'express';
 import cors from 'cors';
 import fetch from 'node-fetch';
+import dotenv from 'dotenv';
 
 const app = express();
-const PORT = 8000;
+const PORT = process.env.PORT;
 
 // Middlewares
 app.use(express.json());
